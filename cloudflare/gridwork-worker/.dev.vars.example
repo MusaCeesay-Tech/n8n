@@ -1,0 +1,6 @@
+# Copy to .dev.vars for local `wrangler dev`. Never commit the real values.
+DISCORD_BOT_TOKEN=
+DISCORD_CLIENT_SECRET=
+WHOP_WEBHOOK_SECRET=
+FIREBASE_SERVICE_ACCOUNT=
+SESSION_SECRET=

@@ -1,0 +1,22 @@
+{
+  "name": "@n8n/gridwork-desktop",
+  "version": "0.1.0",
+  "description": "Gridwork Desktop",
+  "private": true,
+  "main": "dist/main/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:unchecked": "tsc -p tsconfig.json --noCheck",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "start": "electron dist/main/index.js",
+    "dist:win": "pnpm build && electron-builder --win --config electron-builder.config.js",
+    "clean": "rimraf dist out"
+  },
+  "dependencies": {
+    "electron": "catalog:"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.9.0"
+  },
+  "license": "LicenseRef-n8n-sustainable-use"
+}

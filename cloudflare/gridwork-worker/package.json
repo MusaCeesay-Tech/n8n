@@ -1,0 +1,21 @@
+{
+  "name": "gridwork-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --port 8788",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply gridwork",
+    "db:local": "wrangler d1 migrations apply gridwork --local",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240900.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^3.80.0"
+  }
+}

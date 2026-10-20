@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "providers": {
+      "emailPassword": true,
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "Gridwork",
+        "supportEmail": "musacee17@gmail.com"
+      }
+    }
+  }
+}

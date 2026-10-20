@@ -1,0 +1,34 @@
+name = "gridwork-worker"
+main = "src/index.ts"
+compatibility_date = "2025-07-18"
+compatibility_flags = ["nodejs_compat"]
+
+workers_dev = true
+
+# Public configuration. None of these are secret.
+[vars]
+ENV = "dev"
+DISCORD_CLIENT_ID = "1559863209215664128"
+DISCORD_GUILD_ID = "1559870789103128586"
+DISCORD_ROLE_BASIC = "1559909382890983448"
+DISCORD_ROLE_STANDARD = "1559909380705615956"
+DISCORD_ROLE_PREMIUM = "1559909377929126062"
+# Where the Discord login callback sends the browser after it signs in.
+APP_URL = "https://gridworkai.web.app"
+# Whop plan ids, mapped to Gridwork tiers.
+# Product: prod_105z4Mc7oGwXZ ("Gridwork", route gridwork-13)
+WHOP_PLAN_STANDARD = "plan_wtY75sMoU6gPF"
+WHOP_PLAN_PREMIUM = "plan_NmhT7NsWFZXvn"
+
+[[d1_databases]]
+binding = "GRIDWORK_DB"
+database_name = "gridwork"
+database_id = "d1d400e3-b86c-426e-8555-fdab48e1db0b"
+migrations_dir = "migrations"
+
+# Secrets (set with `wrangler secret put <NAME>`, never in this file):
+#   DISCORD_BOT_TOKEN          Discord bot token (Developer Portal > Bot)
+#   DISCORD_CLIENT_SECRET      Discord OAuth2 client secret
+#   WHOP_WEBHOOK_SECRET        ws_... secret from the Whop webhook endpoint
+#   FIREBASE_SERVICE_ACCOUNT   full service-account JSON for project gridworkai
+#   SESSION_SECRET             random string used to sign the OAuth state

@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Logo > renders the logo for authView location 1`] = `"<div class="logoContainer large" data-test-id="n8n-logo"><img src="/src/components/N8nLogo/gridwork-logo.png" class="logo" alt="Gridwork"></div>"`;
+
+exports[`Logo > renders the logo for sidebar location when sidebar is collapsed 1`] = `"<div class="logoContainer sidebar sidebarCollapsed" data-test-id="n8n-logo"><img src="/src/components/N8nLogo/gridwork-logo.png" class="logo" alt="Gridwork"></div>"`;
+
+exports[`Logo > renders the logo for sidebar location when sidebar is expanded 1`] = `"<div class="logoContainer sidebar sidebarExpanded" data-test-id="n8n-logo"><img src="/src/components/N8nLogo/gridwork-logo.png" class="logo" alt="Gridwork"></div>"`;
